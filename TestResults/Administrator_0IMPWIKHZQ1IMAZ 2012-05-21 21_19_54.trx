@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f076c0db-3dad-4f35-b1ee-7e39e4b80544" name="Administrator@0IMPWIKHZQ1IMAZ 2012-05-21 21:19:54" runUser="0IMPWIKHZQ1IMAZ\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d212af82-c35d-4868-aaa6-e572d1bf1b09">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_0IMPWIKHZQ1IMAZ 2012-05-21 21_19_54">
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.IDAL\bin\Debug\Hotel.IDAL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.IBBL\bin\Debug\Hotel.IBBL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.DAL\bin\Debug\Hotel.DAL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.BLL\bin\Debug\Hotel.BLL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.Model\bin\Debug\Hotel.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-21T21:19:54.0781250+08:00" queuing="2012-05-21T21:19:54.6406250+08:00" start="2012-05-21T21:19:54.7812500+08:00" finish="2012-05-21T21:19:58.7187500+08:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddEntityTest" storage="d:\作品\mvc\mvc3\myhotelweb\hoteltest\bin\debug\hoteltest.dll" id="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708">
+      <Execution id="54896171-f454-4264-8963-3a9d7e7195bf" />
+      <TestMethod codeBase="D:/作品/mvc/MVC3/MyHotelWeb/HotelTest/bin/Debug/HotelTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HotelTest.CustomerBLLTest, HotelTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddEntityTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708" executionId="54896171-f454-4264-8963-3a9d7e7195bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="54896171-f454-4264-8963-3a9d7e7195bf" testId="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708" testName="AddEntityTest" computerName="0IMPWIKHZQ1IMAZ" duration="00:00:01.6989958" startTime="2012-05-21T21:19:54.7968750+08:00" endTime="2012-05-21T21:19:57.0468750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54896171-f454-4264-8963-3a9d7e7195bf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 HotelTest.CustomerBLLTest.AddEntityTest() 位置 D:\作品\mvc\MVC3\MyHotelWeb\HotelTest\CustomerBLLTest.cs:行号 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CZBKHotelDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CZBKHotelDBModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="CZBKHotelDBModel.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="CZBKHotelDBModel.Store.Order" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CustomerOrder" Association="CZBKHotelDBModel.Store.FK_CustomerOrder">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Remark" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderName" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="OrderContent" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CustomerOrder">
+    <End Role="Customer" Type="CZBKHotelDBModel.Store.Customer" Multiplicity="1" />
+    <End Role="Order" Type="CZBKHotelDBModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

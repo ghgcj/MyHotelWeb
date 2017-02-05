@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7f787156-309b-48ca-a163-20af7f077289" name="Administrator@0IMPWIKHZQ1IMAZ 2012-05-21 21:21:44" runUser="0IMPWIKHZQ1IMAZ\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d212af82-c35d-4868-aaa6-e572d1bf1b09">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_0IMPWIKHZQ1IMAZ 2012-05-21 21_21_44">
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.IDAL\bin\Debug\Hotel.IDAL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.IBBL\bin\Debug\Hotel.IBBL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.DAL\bin\Debug\Hotel.DAL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.BLL\bin\Debug\Hotel.BLL.dll" />
+      <DeploymentItem filename="D:\作品\mvc\MVC3\MyHotelWeb\Hotel.Model\bin\Debug\Hotel.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-05-21T21:21:44.5625000+08:00" queuing="2012-05-21T21:21:44.5781250+08:00" start="2012-05-21T21:21:44.6562500+08:00" finish="2012-05-21T21:21:45.3437500+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddEntityTest" storage="d:\作品\mvc\mvc3\myhotelweb\hoteltest\bin\debug\hoteltest.dll" id="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708">
+      <Execution id="9348e1c8-c542-4924-a99b-8feb1862d040" />
+      <TestMethod codeBase="D:/作品/mvc/MVC3/MyHotelWeb/HotelTest/bin/Debug/HotelTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="HotelTest.CustomerBLLTest, HotelTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddEntityTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708" executionId="9348e1c8-c542-4924-a99b-8feb1862d040" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9348e1c8-c542-4924-a99b-8feb1862d040" testId="15b9a1ff-59d8-d7e3-4ba1-b489ed25b708" testName="AddEntityTest" computerName="0IMPWIKHZQ1IMAZ" duration="00:00:00.1792074" startTime="2012-05-21T21:21:44.6562500+08:00" endTime="2012-05-21T21:21:45.3125000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9348e1c8-c542-4924-a99b-8feb1862d040">
+    </UnitTestResult>
+  </Results>
+</TestRun>
